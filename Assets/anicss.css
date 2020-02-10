@@ -14,12 +14,13 @@ filter: none;
 #slide2{
   width: 500px;
   overflow: hidden;
-  animation: slide2-ani 10s linear infinite;
+  animation-name: slide2-ani;
+  animation-duration: 2s;
 }
 #slide2 img {
   width: 500px;
-  transition: all .25s
-  filter:blur(10px);
+  transition: all .25s;
+  filter: blur(10px);
 }
 #slide2:hover img{
   filter: none;
@@ -28,10 +29,18 @@ filter: none;
   0%{left: 0;}
   100%{left: 1200px;}
 }
-#link {
+#link a{
   transition: .25s
 }
-#link:hover {
-  filter: blur(5px);
-  color: orange;
+#link:hover a{
+  text-decoration: color: orange;
+}
+#body {animation: body-ani 4s linear infinite;
+}
+@@keyframes body-ani {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
