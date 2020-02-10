@@ -1,0 +1,36 @@
+#slide1 {
+width: 500px;
+overflow: hidden;
+}
+#slide1 img {
+width: 500px;
+transition: all .25s;
+filter:blur(5px);
+}
+#slide1:hover img {
+transform: scale(1.5);
+filter: none;
+}
+#slide2{
+  width: 500px;
+  overflow: hidden;
+  animation: slide2-ani 10s linear infinite;
+}
+#slide2 img {
+  width: 500px;
+  transition: all .25s
+  filter:blur(10px);
+}
+#slide2:hover img{
+  filter: none;
+}
+@@keyframes slide2-ani {
+  0%{position: relative;}
+  100%{left: 1200px;}
+}
+#link {
+  transition: .25s
+}
+#link:hover {
+  filter: blur(5px);
+}
