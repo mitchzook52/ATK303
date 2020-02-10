@@ -36,6 +36,7 @@ filter: none;
   text-decoration: color: orange;
 }
 #body {animation: body-ani 4s linear infinite;
+  background-color: inherit;
 }
 @@keyframes body-ani {
   0%   {background-color:red; left:0px; top:0px;}
