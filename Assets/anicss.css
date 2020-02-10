@@ -25,7 +25,7 @@ filter: none;
   filter: none;
 }
 @@keyframes slide2-ani {
-  0%{position: relative;}
+  0%{left: 0;}
   100%{left: 1200px;}
 }
 #link {
