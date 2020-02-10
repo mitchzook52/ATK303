@@ -40,9 +40,7 @@ filter: none;
  height: 100px;
  background-color: red;
  position: relative;
- animation-name: square1-ani;
- animation-duration: 4s;
- animation-iteration-count: infinite;
+ animation: square1-ani 10s linear infinite;
 }
 @@keyframes square1-ani {
   0%   {background-color:red; left:0px; top:0px;}
