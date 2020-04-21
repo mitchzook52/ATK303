@@ -1,0 +1,11 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media all and (min-width: 50em){
+  h1 { color: red; padding-bottom: .1em; }
+  nav { width: 30%; grid-template-columns: 1fr; }
+  nav a { margin-right: 1em; }
+  main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
+}
