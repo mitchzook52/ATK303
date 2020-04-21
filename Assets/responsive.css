@@ -2,6 +2,7 @@
 main {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: grey;
 }
 @media all and (min-width: 20em){
   h1 { color: blue; padding-bottom: .1em; }
