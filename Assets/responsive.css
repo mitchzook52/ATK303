@@ -3,7 +3,12 @@ main {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+@media all and (min-width: 20em){
+  h1 { color: blue; padding-bottom: .1em; }
+  h2 {color: blue; padding-bottom: .1em;}
+  nav { width: 20%; grid-template-columns: 1fr; }
+  nav a { margin-right: 1em; }
+  main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
 @media all and (min-width: 50em){
   h1 { color: red; padding-bottom: .1em; }
   h2 {color: red; padding-bottom: .1em;}
@@ -13,7 +18,7 @@ main {
   @media all and (min-width: 70em){
     h1 { color: green; padding-bottom: .1em; }
     h2 {color: green; padding-bottom: .1em;}
-    nav { width: 20%; grid-template-columns: 3fr; }
+    nav { width: 70%; grid-template-columns: 3fr; }
     nav a { margin-right: 1em; }
     main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
 }
